@@ -1,0 +1,9 @@
+.product {
+  border-color: aqua;
+  border-style: solid;
+  margin: 10px;
+}
+
+.product_numbers {
+  display: flex;
+}

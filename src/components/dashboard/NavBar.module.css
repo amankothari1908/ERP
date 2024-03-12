@@ -1,0 +1,55 @@
+.navbar_container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 49;
+  margin-top: 56px;
+  display: none;
+  height: calc(100vh - 42px);
+  width: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  transition-property: width;
+  transition-duration: 150ms;
+}
+
+.navbar_children {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+}
+
+.navbar_children__p {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.75rem;
+  padding-left: 0.5rem;
+  padding-left: 0.5rem;
+  visibility: hidden;
+}
+
+.navbar_container:hover {
+  width: 220px;
+}
+
+.navbar_children__p:hover {
+  visibility: visible;
+}
+
+.navbar_container.dark-bg-secondary-800 {
+  background-color: #374151; /* Example color, replace with your desired color */
+}
+
+@media (min-width: 1024px) {
+  .navbar_container.lg-flex {
+    display: flex;
+  }
+}
