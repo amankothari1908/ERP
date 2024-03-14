@@ -6,30 +6,60 @@ import DashBoard from "./components/dashboard/DashBoard";
 import ErrorPage from "./components/uilts/ErrorPage";
 import Products from "./components/products/Products";
 import Orders from "./components/orders/Orders";
-import OrdersDetails from "./components/orders/OrdersDetails";
+import UpdateOrder from "./components/orders/UpdateOrder";
 import UpdateProduct from "./components/products/UpdateProduct";
+import Layout from "./components/uilts/Layout";
+import OrdersCalendarView from "./components/orders/OrdersCalendarView";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <DashBoard />,
+    element: (
+      <Layout>
+        <DashBoard />
+      </Layout>
+    ),
     errorElement: <ErrorPage />,
   },
   {
     path: "/products",
-    element: <Products />,
+    element: (
+      <Layout>
+        <Products />
+      </Layout>
+    ),
   },
   {
     path: "/products/:productId",
-    element: <UpdateProduct />,
+    element: (
+      <Layout>
+        <UpdateProduct />
+      </Layout>
+    ),
   },
   {
     path: "/orders",
-    element: <Orders />,
+    element: (
+      <Layout>
+        <Orders />
+      </Layout>
+    ),
   },
   {
     path: "/orders/:orderId",
-    element: <OrdersDetails />,
+    element: (
+      <Layout>
+        <UpdateOrder />
+      </Layout>
+    ),
+  },
+  {
+    path: "/ordersCalendar",
+    element: (
+      <Layout>
+        <OrdersCalendarView />
+      </Layout>
+    ),
   },
 ]);
 

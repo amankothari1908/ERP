@@ -1,47 +1,57 @@
-.update_product_container {
+.update_order_container {
   background-color: #f4eeff;
   width: 50%;
   margin: auto;
   margin-top: 2rem;
   min-width: 330px;
 }
-.update_product_container h1 {
+.update_order_container h1 {
   font-weight: 500;
 }
-.update_product_form {
+.update_order_form {
   display: flex;
   flex-direction: column;
 }
-.update_product_form label {
-  padding: 0.5rem 0rem;
-  font-size: 20px;
-}
-.update_product_form input {
+.update_order_form h4 {
+  font-weight: 400;
   background-color: #fff;
   padding: 0.5rem;
-  border: none;
+  border-color: #7469b6;
   height: 30px;
   border-radius: 5px;
   font-size: 15px;
 }
-.update_product_buttons button {
+.update_order_form label {
+  padding: 0.5rem 0rem;
+  font-size: 20px;
+}
+.update_order_form input {
+  background-color: #fff;
+  padding: 0.5rem;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.update_order_form button {
   border: none;
   background-color: #7469b6;
   color: white;
   padding: 0.5rem;
   margin-top: 20px;
   border-radius: 5px;
+  cursor: pointer;
 }
-.update_product_buttons {
+
+.update_order_buttons {
   display: flex;
   width: 100%;
 }
-.update_product_buttons button:first-of-type {
+.update_order_buttons button:first-of-type {
   flex: 1;
   margin-right: 3px;
   cursor: pointer;
 }
-.update_product_buttons button:last-of-type {
+.update_order_buttons button:last-of-type {
   flex: 1;
   cursor: pointer;
   background-color: transparent;

@@ -1,0 +1,64 @@
+.order_container {
+  min-width: 28%;
+  min-width: 300px;
+  height: 150px;
+  border: 1px solid #7469b6;
+  padding: 1rem;
+  margin-top: 1em;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+  background-color: #fff;
+}
+.order_container h4 {
+  background-color: #fff;
+  font-weight: 400;
+}
+.order_content h3 {
+  background-color: #fff;
+  font-weight: 600;
+}
+/* .order_container:hover {
+  scale: 1.05;
+  transition: 1s;
+} */
+.order_container button {
+  background-color: #7469b6;
+  color: #fff;
+  align-self: flex-end;
+  width: fit-content;
+  cursor: pointer;
+  padding: 0.5em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.Delivered {
+  width: fit-content;
+  color: white;
+  background-color: #67c6e3 !important;
+  padding: 0.1rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+.Shipped,
+.Processing {
+  width: fit-content;
+  color: #337357;
+  background-color: #a5dd9b !important;
+  padding: 0.1rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+.Pending,
+.Cancelled {
+  width: fit-content;
+  background-color: #ff6868 !important;
+  color: white;
+  padding: 0.1rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
